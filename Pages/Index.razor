@@ -3,115 +3,19 @@
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
 
-    <form @onchange="OnHelmetChange">
-      <label for="favcolor">Helmet:</label>
-      <input
-        type="color"
-        id="favcolor"
-        name="favcolor"
-        value="#ff0000"
-      /><br /><br />
-    </form>
-    <svg
-      xmlns:dc="http://purl.org/dc/elements/1.1/"
-      xmlns:cc="http://creativecommons.org/ns#"
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:svg="http://www.w3.org/2000/svg"
-      xmlns="http://www.w3.org/2000/svg"
-      width="184.60019"
-      height="221.94017"
-      viewBox="0 0 48.842131 58.721672"
-      version="1.1"
-      id="svg1692"
-    >
-      <defs id="defs1686" />
-      <metadata id="metadata1689">
-        <rdf:RDF>
-          <cc:Work rdf:about="">
-            <dc:format>image/svg+xml</dc:format>
-            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-            <dc:title />
-          </cc:Work>
-        </rdf:RDF>
-      </metadata>
-      <g id="layer1" transform="translate(-5.8170301,-1.6332126)">
-        <ellipse
-          style="
-            fill: #dcc8f1;
-            fill-opacity: 1;
-            stroke: #000200;
-            stroke-width: 1.68941;
-            stroke-linejoin: round;
-            stroke-miterlimit: 4;
-            stroke-dasharray: none;
-            stroke-dashoffset: 0;
-            stroke-opacity: 1;
-          "
-          id="path1108"
-          cx="30.238092"
-          cy="42.282001"
-          rx="16.062222"
-          ry="17.228176"
-        />
-        <rect
-          style="
-            fill: #86ec5a;
-            fill-opacity: 1;
-            stroke: #430200;
-            stroke-width: 2;
-            stroke-linejoin: round;
-            stroke-miterlimit: 4;
-            stroke-dasharray: none;
-            stroke-opacity: 1;
-          "
-          id="rect1058"
-          width="22.146646"
-          height="13.318723"
-          x="19.164774"
-          y="25.878605"
-        />
-        <path
-          style=@hat
-          d="M 57.122827,47.162561 C 51.565114,41.69603 41.934987,54.20739 34.115006,53.6189 25.3491,43.836287 53.254288,43.427747 22.378014,35.569265 c -7.05131,24.968833 -3.035998,60.705401 6.706648,69.502275 l 11.527623,-11.130116 11.527622,-11.130118 -7.796105,-4.252699 11.630679,-4.122265 1.148346,-0.407009 1.148346,0.407009 11.630679,4.122265 -7.796105,4.252699 11.527622,11.130118 11.527623,11.130116 C 94.903638,96.274666 98.91895,60.538098 91.86764,35.569265 60.991366,43.427747 88.896554,43.836287 80.130648,53.6189 72.310667,54.20739 62.68054,41.69603 57.122827,47.162561 Z"
-          id="path1038"
-          transform="matrix(0.6133457,0,0,0.72232429,-4.7979433,-22.974145)"
-        />
-      </g>
-    </svg>
+@* <form @onchange="OnHelmetChange">
+    <label for="favcolor">Helmet:</label>
+    <input
+    type="color"
+    id="favcolor"
+    name="favcolor"
+    value="#ff0000"
+    /><br /><br />
+</form> *@
+<img src="images/head.svg" />
+<img src="images/head_man.svg" />
+<img src="images/head_woman.svg" />
+<img src="images/head_girl.svg" />
 
-<h1>Counter</h1>
-
-<p>Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
-@code {
-    [Parameter]
-    public string Title { get; set;}
-    private int currentCount = 0;
-    private string hat = $@"
-        mix-blend-mode: normal;
-        fill: #ff0000;
-        fill-opacity: 1;
-        stroke: #000200;
-        stroke-width: 3.00477;
-        stroke-linecap: butt;
-        stroke-linejoin: round;
-        stroke-miterlimit: 4;
-        stroke-dasharray: none;
-        stroke-dashoffset: 0;
-        stroke-opacity: 1;";          
-    
-    private void OnHelmetChange()
-    {
-        currentCount++;
-    }
-    
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
 
