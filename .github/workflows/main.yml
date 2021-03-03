@@ -37,7 +37,7 @@ jobs:
 
       # changes the base-tag in the index.html from '/' to 'PlaygroundSVG' to match Github Pages repository subdirectory
       - name: Change base-tag in index.html from / to PlaygroundSVG
-        run: sed -i 's/<base href="\/" \/>/<base href="\/GitHubPagesDemo\/" \/>/g' release/wwwroot/index.html
+        run: sed -i 's/<base href="\/" \/>/<base href="\/PlaygroundSVG\/" \/>/g' release/wwwroot/index.html
         
       # add .nojekyll file to tell Github pages to not treat this as a Jekyll project.  (Allow files and folders with underscore)
       - name: Add .nojekyll file
